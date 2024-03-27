@@ -42,9 +42,16 @@ fclose($fp);
 <head>
     <meta charset="utf-8">
     <title>My Recipe Collection</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <h2>マイレシピ　コレクション</h2>
+    <div class="myRecipe">
+        <ul class="item"></ul>
+    </div>
+
     <?php
     $json = json_encode($array, JSON_UNESCAPED_UNICODE);
     ?>
@@ -53,11 +60,29 @@ fclose($fp);
         // JSONファイルに、改行コードなどの特殊文字が混入しるので、それらを取り除く。
         let jsonText = '<?= $json; ?>';
         let clean_jsonText = jsonText.replace(/[\u0000-\u0019]+/g, "");
-        
+
         let jsArray = JSON.parse(clean_jsonText);
         console.log({
             jsArray
         });
+        console.log(jsArray.length);
+
+        for (let i = 0; i < jsArray.length; i++) {
+            const output =
+                '<li class="list">' +
+                '<h3 class="title">' +
+                jsArray[i][0] +
+                '</h3>' +
+                '<p class="ing">' +
+                jsArray[i][1] +
+                '<p class="ins">' +
+                jsArray[i][2] +
+                '<p class="memo">' +
+                jsArray[i][3] +
+                '</p>' +
+                '</li>';
+            $('.item').append(output);
+        }
     </script>
 
 
