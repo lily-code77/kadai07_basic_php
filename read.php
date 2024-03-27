@@ -22,17 +22,17 @@ while (!feof($fp)) {
 // var_dump($array);
 
 // 各配列を画面に表示している
-foreach ($array as $vals) {
-    echo '料理名：' . $vals[0];
-    echo '<br>';
-    echo '材料：' . $vals[1];
-    echo '<br>';
-    echo '作り方：' . $vals[2];
-    echo '<br>';
-    echo 'メモ：' . $vals[3];
-    echo '<br>';
-    echo '<br>';
-}
+// foreach ($array as $vals) {
+//     echo '料理名：' . $vals[0];
+//     echo '<br>';
+//     echo '材料：' . $vals[1];
+//     echo '<br>';
+//     echo '作り方：' . $vals[2];
+//     echo '<br>';
+//     echo 'メモ：' . $vals[3];
+//     echo '<br>';
+//     echo '<br>';
+// }
 
 // fcloseでファイルを閉じる
 fclose($fp);
@@ -45,15 +45,20 @@ fclose($fp);
 </head>
 
 <body>
-    <!-- <?php
-        $json = json_encode($array, JSON_UNESCAPED_UNICODE);
-        var_dump($json);
+    <?php
+    $json = json_encode($array, JSON_UNESCAPED_UNICODE);
     ?>
 
     <script>
-        let jsArray = JSON.parse('<?=$json;?>');
-        console.log({jsArray});
-    </script> -->
+        // JSONファイルに、改行コードなどの特殊文字が混入しるので、それらを取り除く。
+        let jsonText = '<?= $json; ?>';
+        let clean_jsonText = jsonText.replace(/[\u0000-\u0019]+/g, "");
+        
+        let jsArray = JSON.parse(clean_jsonText);
+        console.log({
+            jsArray
+        });
+    </script>
 
 
     <a href="index.php">index.php</a>
