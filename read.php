@@ -68,19 +68,23 @@ fclose($fp);
         console.log(jsArray.length);
 
         for (let i = 0; i < jsArray.length; i++) {
+            console.log(jsArray[i][1]);
             const output =
                 '<li class="list">' +
                 '<h3 class="title">' +
                 jsArray[i][0] +
                 '</h3>' +
+                '<p class="img">' +
+                '<img src="' + jsArray[i][1] + '">' +
                 '<p class="ing">' +
-                jsArray[i][1] +
-                '<p class="ins">' +
                 jsArray[i][2] +
-                '<p class="memo">' +
+                '<p class="ins">' +
                 jsArray[i][3] +
+                '<p class="memo">' +
+                jsArray[i][4] +
                 '</p>' +
                 '</li>';
+
             $('.item').append(output);
         }
     </script>
