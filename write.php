@@ -1,14 +1,12 @@
 <?php
-$name         = $_POST["name"];
-$ingredients  = $_POST["ingredients"];
-$instructions = $_POST["instructions"];
+$name         = htmlspecialchars($_POST["name"], ENT_QUOTES);
+$ingredients  = htmlspecialchars($_POST["ingredients"], ENT_QUOTES);
+$instructions = htmlspecialchars($_POST["instructions"], ENT_QUOTES);
 $jitan        = $_POST["jitan"];
 $kotteri      = $_POST["kotteri"];
 $assari       = $_POST["assari"];
-$yes          = $_POST["yes"];
-$no           = $_POST["no"];
-$memo         = $_POST["memo"];
-$photo        = $_POST["photo"];
+$memo         = htmlspecialchars($_POST["memo"], ENT_QUOTES);
+$yesNo        = htmlspecialchars($_POST["yesNo"], ENT_QUOTES);
 $c            = ",";
 
 
@@ -30,8 +28,8 @@ var_dump($success);
     endif;
 endif;
 
-// 一旦、写真、キーワード、完成の項目は抜く
-$str = $name . $c . $filePath . $c . $ingredients . $c . $instructions . $c . $memo;
+// 一旦、キーワードの項目は抜く
+$str = $name . $c . $filePath . $c . $ingredients . $c . $instructions . $c . $memo . $c . $yesNo;
 
 // オープンモード"a":ファイルがない場合は新規作成する。ファイルポインタの位置は末尾。 
 $file = fopen("data.csv", "a");

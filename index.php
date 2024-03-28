@@ -30,8 +30,8 @@
                 <input type="checkbox" name="assari" id="">
                 <label for="assari">あっさり</label>
             </div>
-            ＊完成：<input type="radio" name="yes">YES<input type="radio" name="no">NO<br>
             メモ：<textarea name="memo" id="" cols="30" rows="10"></textarea>
+            ＊完成：<input type="radio" name="yesNo" value="yes">YES<input type="radio" name="yesNo" value="no">NO<br>
         </div>
         <button type="submit">作成</button>
     </form>

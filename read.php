@@ -52,6 +52,11 @@ fclose($fp);
         <ul class="item"></ul>
     </div>
 
+    <h2>作成中のレシピ</h2>
+    <div class="unfinished">
+        <ul class="unfinishedItem"></ul>
+    </div>
+
     <?php
     $json = json_encode($array, JSON_UNESCAPED_UNICODE);
     ?>
@@ -85,7 +90,12 @@ fclose($fp);
                 '</p>' +
                 '</li>';
 
-            $('.item').append(output);
+            if (jsArray[i][5] === "yes") {
+                $('.item').append(output);
+            } else {
+                $('.unfinishedItem').append(output);
+            }
+
         }
     </script>
 
