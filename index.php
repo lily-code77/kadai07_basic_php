@@ -35,16 +35,6 @@
         </div>
         <button type="submit">作成</button>
     </form>
-
-    <h2>マイレシピ集</h2>
-    <div class="myRecipe">
-        <ul class="item"></ul>
-    </div>
-
-    <h2>作成中のレシピ</h2>
-    <div class="notYet">
-        <ul class="item"></ul>
-    </div>
 </body>
 
 </html>
