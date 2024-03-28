@@ -29,11 +29,10 @@ endif;
 if (isset($keyword) && is_array($keyword)){
     $keywords = implode(",", $keyword);
 }
-var_dump($keyword);
+// var_dump($keyword);
 
-// 一旦、キーワードの項目は抜く
 $str = $name . $c . $filePath . $c . $ingredients . $c . $instructions . $c . $memo . $c . $yesNo . $c . $keywords;
-var_dump($str);
+// var_dump($str);
 
 // オープンモード"a":書き込み専用でファイルをオープン。ファイルがない場合は新規作成する。ファイルポインタの位置は末尾。 
 $file = fopen("data.csv", "a");
