@@ -73,7 +73,15 @@ fclose($fp);
         console.log(jsArray.length);
 
         for (let i = 0; i < jsArray.length; i++) {
-            console.log(jsArray[i][1]);
+            console.log(`length: ${jsArray[i].length}`);
+
+            let hashTags = ""
+            for (let j = 6; j < jsArray[i].length; j++) {
+                hashTags += "#";
+                hashTags += jsArray[i][j];
+                hashTags += " ";
+            }
+
             const output =
                 '<li class="list">' +
                 '<h3 class="title">' +
@@ -90,6 +98,9 @@ fclose($fp);
                 '</p>' +
                 '<p class="memo">' +
                 jsArray[i][4] +
+                '</p>' +
+                '<p class="hashTag">' +
+                hashTags +
                 '</p>' +
                 '</li>';
 
