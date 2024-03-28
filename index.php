@@ -11,7 +11,7 @@
 
 <body>
     <h1>マイレシピ　ラボ</h1>
-    <form action="write.php" method="post">
+    <form action="write.php" method="post" enctype="multipart/form-data">
         <div>
             ＊料理名：<input type="text" name="name" id=""><br>
             写真：<input type="file" name="photo" id=""><br>
