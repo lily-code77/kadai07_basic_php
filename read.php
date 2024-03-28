@@ -81,10 +81,13 @@ fclose($fp);
                 '</h3>' +
                 '<p class="img">' +
                 '<img src="' + jsArray[i][1] + '">' +
+                '</p>' +
                 '<p class="ing">' +
                 jsArray[i][2] +
+                '</p>' +
                 '<p class="ins">' +
                 jsArray[i][3] +
+                '</p>' +
                 '<p class="memo">' +
                 jsArray[i][4] +
                 '</p>' +

@@ -19,15 +19,15 @@
             ＊作り方：<input type="text" name="instructions" id=""><br>
             キーワード (複数選択可能)：
             <div>
-                <input type="checkbox" name="jitan">
+                <input type="checkbox" name="keyword[]" value="jitan">
                 <label for="jitan">時短</label>
             </div>
             <div>
-                <input type="checkbox" name="kotteri" id="">
+                <input type="checkbox" name="keyword[]" value="kotteri">
                 <label for="kotteri">こってり</label>
             </div>
             <div>
-                <input type="checkbox" name="assari" id="">
+                <input type="checkbox" name="keyword[]" value="assari">
                 <label for="assari">あっさり</label>
             </div>
             メモ：<textarea name="memo" id="" cols="30" rows="10"></textarea>
