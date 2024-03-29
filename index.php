@@ -40,7 +40,7 @@
             レシピ背景：<br><textarea name="memo" id="textarea" cols="70" rows="10"></textarea><br>
             完成：<input type="radio" name="yesNo" value="yes">YES<input type="radio" name="yesNo" value="no">NO<br>
         </div>
-        <button type="submit">作成</button>
+        <button id="b" type="submit">作成</button>
     </form>
 </body>
 

@@ -2,6 +2,8 @@ body {
     font-family:"Murecho";
     background-color: antiquewhite;
     line-height: 50px;
+
+    margin: 50px;
 }
 
 h1 {
@@ -37,7 +39,14 @@ h1 {
     border: 2px solid black;
 }
 
-#button {
-    padding: 50px;
-    margin-left: 90%;
+#b {
+    font-size: 15px;
+    border-radius: 8px;
+
+    /* padding: 10px; */
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 60%;
 }
