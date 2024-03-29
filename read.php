@@ -88,7 +88,7 @@ fclose($fp);
                 jsArray[i][0] +
                 '</h3>' +
                 '<p class="img">' +
-                '<img src="' + jsArray[i][1] + '">' +
+                '<img src="' + jsArray[i][1] + '" width="300px">' +
                 '</p>' +
                 '<p class="ing">' +
                 jsArray[i][2] +
