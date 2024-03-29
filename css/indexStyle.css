@@ -37,6 +37,7 @@ h1 {
     border: 2px solid black;
 }
 
-button {
-    text-align: right;
+#button {
+    padding: 50px;
+    margin-left: 90%;
 }

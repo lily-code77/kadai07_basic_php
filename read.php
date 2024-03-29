@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Lab | 食べたい料理に出会える場所</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/readStyle.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
 <?php
 // ファイルを変数に格納
 $filename = 'data2.csv';
@@ -72,7 +87,7 @@ fclose($fp);
         });
         console.log(jsArray.length);
 
-        for (let i = 0; i < jsArray.length; i++) {
+        for (let i = 0; i < jsArray.length - 1; i++) {
             console.log(`length: ${jsArray[i].length}`);
 
             let hashTags = ""
