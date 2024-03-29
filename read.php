@@ -34,21 +34,6 @@ while (!feof($fp)) {
     $array[] = explode(',', $txt);
 }
 
-// var_dump($array);
-
-// 各配列を画面に表示している
-// foreach ($array as $vals) {
-//     echo '料理名：' . $vals[0];
-//     echo '<br>';
-//     echo '材料：' . $vals[1];
-//     echo '<br>';
-//     echo '作り方：' . $vals[2];
-//     echo '<br>';
-//     echo 'メモ：' . $vals[3];
-//     echo '<br>';
-//     echo '<br>';
-// }
-
 // fcloseでファイルを閉じる
 fclose($fp);
 ?>
@@ -99,19 +84,24 @@ fclose($fp);
 
             const output =
                 '<li class="list">' +
+                '<p class="img">' +
+                '<img src="' + jsArray[i][1] + '" width="300px">' +
                 '<h3 class="title">' +
                 jsArray[i][0] +
                 '</h3>' +
-                '<p class="img">' +
-                '<img src="' + jsArray[i][1] + '" width="300px">' +
-                '</p>' +
+                // '<p class="img">' +
+                // '<img src="' + jsArray[i][1] + '" width="300px">' +
+                // '</p>' +
                 '<p class="ing">' +
+                "材料：" +
                 jsArray[i][2] +
                 '</p>' +
                 '<p class="ins">' +
+                "作り方：" +
                 jsArray[i][3] +
                 '</p>' +
                 '<p class="memo">' +
+                "レシピ背景：" +
                 jsArray[i][4] +
                 '</p>' +
                 '<p class="hashTag">' +

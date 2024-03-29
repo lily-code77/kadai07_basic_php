@@ -28,3 +28,54 @@ a {
     /* font-size: 100px; */
     margin-left: 90%;
 }
+
+/* ポラロイド風 */
+ul.item, ul.unfinishedItem {
+    list-style: none;
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+li,list {
+    min-height: 300px;
+    background: #fff;
+    padding: 1.5rem 1rem;
+}
+
+div.img {
+    width: 100%;
+    height: 154px;
+}
+
+div.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p.title {
+    line-height: 1.6;
+    color: #333;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #9a9696;
+}
+
+.hashTag {
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+}
+
+li.list :hover {
+    opacity: 0.7;
+}
+
+.ing, .ins, .memo {
+    font-size: 15px;
+    line-height: 20px;
+
+    padding-bottom: 15px;
+}
