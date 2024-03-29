@@ -73,7 +73,7 @@ fclose($fp);
         console.log(jsArray.length);
 
         for (let i = 0; i < jsArray.length - 1; i++) {
-            console.log(`length: ${jsArray[i].length}`);
+            // console.log(`length: ${jsArray[i].length}`);
 
             let hashTags = ""
             for (let j = 6; j < jsArray[i].length; j++) {
@@ -86,12 +86,12 @@ fclose($fp);
                 '<li class="list">' +
                 '<p class="img">' +
                 '<img src="' + jsArray[i][1] + '" width="300px">' +
-                '<h3 class="title">' +
+                '<details>' +
+                '<summary class="title">' +
+                // '<h3 class="title" id="' + jsArray[i][0] + '"> ' +
                 jsArray[i][0] +
                 '</h3>' +
-                // '<p class="img">' +
-                // '<img src="' + jsArray[i][1] + '" width="300px">' +
-                // '</p>' +
+                '</summary>' +
                 '<p class="ing">' +
                 "材料：" +
                 jsArray[i][2] +
@@ -104,6 +104,7 @@ fclose($fp);
                 "レシピ背景：" +
                 jsArray[i][4] +
                 '</p>' +
+                '</details>' +
                 '<p class="hashTag">' +
                 hashTags +
                 '</p>' +
