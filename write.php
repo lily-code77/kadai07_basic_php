@@ -10,11 +10,11 @@ $c            = ",";
 
 // 写真
 $pic = $_FILES['photo'];
-// var_dump($pic);
+var_dump($pic);
 
 $ext = substr($pic['name'], -4);
 // var_dump($ext);
-if ($ext == '.gif' || $ext == '.jpg' || $ext == '.png') :
+if ($ext == '.gif' || $ext == '.jpg' || $ext =='.png') :
     $filePath = './user_img/' . $pic['name'];
     // var_dump($filePath);
     $success = move_uploaded_file($pic['tmp_name'], $filePath);
@@ -35,7 +35,7 @@ $str = $name . $c . $filePath . $c . $ingredients . $c . $instructions . $c . $m
 // var_dump($str);
 
 // オープンモード"a":書き込み専用でファイルをオープン。ファイルがない場合は新規作成する。ファイルポインタの位置は末尾。 
-$file = fopen("data.csv", "a");
+$file = fopen("data2.csv", "a");
 
 fwrite($file, $str."\n");
 fclose($file);

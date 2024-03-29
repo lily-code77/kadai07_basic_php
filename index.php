@@ -30,7 +30,7 @@
                 <input type="checkbox" name="keyword[]" value="あっさり">
                 <label for="assari">あっさり</label>
             </div>
-            メモ：<textarea name="memo" id="" cols="30" rows="10"></textarea>
+            レシピ背景：<textarea name="memo" id="" cols="30" rows="10"></textarea>
             ＊完成：<input type="radio" name="yesNo" value="yes">YES<input type="radio" name="yesNo" value="no">NO<br>
         </div>
         <button type="submit">作成</button>

@@ -1,6 +1,6 @@
 <?php
 // ファイルを変数に格納
-$filename = 'data.csv';
+$filename = 'data2.csv';
 
 // fopenでファイルを開く（'r'は読み込みモードで開く）
 $fp = fopen($filename, 'r');
