@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Lab | 食べたい料理に出会える場所</title>
+    <title>紡くっく | 料理でつながるコミュニティサイト</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/indexStyle.css">
     <!-- google font -->
@@ -24,16 +24,17 @@
             キーワード (複数選択可能)：
             <div class="keywordSelect">
                 <div>
-                    <input type="checkbox" name="keyword[]" value="時短">
-                    <label for="jitan">時短</label>
+                    <input type="checkbox" name="keyword[]" value="わくわく">
+                    <label for="wakuwaku">わくわく</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="keyword[]" value="こってり">
-                    <label for="kotteri">こってり</label>
+                    <input type="checkbox" name="keyword[]" value="癒された">
+                    <label for="iyasareta">癒された</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="keyword[]" value="あっさり">
-                    <label for="assari">あっさり</label>
+                    <input type="checkbox" name="keyword[]" value="緊張する">
+                    <label for="kinchousuru">緊張する</label>
+
                 </div>
             </div>
 

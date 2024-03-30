@@ -11,8 +11,22 @@ h2 {
     text-align: center;
     font-weight: bold;
 
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 50px;
+}
+
+#search {
+    line-height: 30px;
+    text-align: center;
+}
+
+.input {
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 summary {
@@ -21,7 +35,11 @@ summary {
 
 .hashTag {
     color: rgb(14, 14, 142);
-    
+}
+
+.good {
+    color: #5d5c5c;
+    line-height: 30px;
 }
 
 a {
@@ -43,6 +61,7 @@ li,list {
     min-height: 300px;
     background: #fff;
     padding: 1.5rem 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 div.img {

@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Lab | 食べたい料理に出会える場所</title>
+    <title>紡くっく | 料理でつながるコミュニティサイト</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/readStyle.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <?php
@@ -37,17 +39,16 @@ while (!feof($fp)) {
 // fcloseでファイルを閉じる
 fclose($fp);
 ?>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>My Recipe Collection</title>
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
 
 <body>
-    <h2>マイレシピ　コレクション</h2>
+    <h2>マイページ</h2>
+    <form id="search" action="" method="post">
+        レシピを検索しますか？<br>
+        今の気分か、なりたい気分を入れてください。<br>
+        <input type="text" name="kensaku" class="input">
+    </form>
+    <h2>紡くっく　マイレシピ</h2>
+    <a href="">派生図を見る</a>
     <div class="myRecipe">
         <ul class="item"></ul>
     </div>
@@ -55,6 +56,11 @@ fclose($fp);
     <h2>作成中のレシピ</h2>
     <div class="unfinished">
         <ul class="unfinishedItem"></ul>
+    </div>
+
+    <h2>❤️ごちそうさま❤️</h2>
+    <div class="thankyou">
+        <ul class="thankyouItem"></ul>
     </div>
 
     <?php
@@ -108,6 +114,13 @@ fclose($fp);
                 '<p class="hashTag">' +
                 hashTags +
                 '</p>' +
+                '<p class="good">' +
+                "ごちそうさま: " +
+                Math.ceil(Math.random() * 100) +
+                '<br>' +
+                "被引用数: " +
+                Math.ceil(Math.random() * 50) +
+                '</p>' +
                 '</li>';
 
             if (jsArray[i][5] === "yes") {
@@ -123,4 +136,4 @@ fclose($fp);
     <a href="index.php">index.php</a>
 </body>
 
-</html>
+<!-- </html> -->
