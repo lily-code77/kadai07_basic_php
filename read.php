@@ -47,8 +47,8 @@ fclose($fp);
         今の気分か、なりたい気分を入れてください。<br>
         <input type="text" name="kensaku" class="input">
     </form>
-    <h2>紡くっく　マイレシピ</h2>
-    <a href="">派生図を見る</a>
+    <h2>あなたが紡いだレシピ</h2>
+    <a href="">紡がれた食卓を見る</a>
     <div class="myRecipe">
         <ul class="item"></ul>
     </div>
